@@ -1,0 +1,16 @@
+
+
+body { 
+  font-family: 'Inter', sans-serif; 
+  background-color: #0E0E10; 
+  color: white;
+}
+
+@keyframes flash-red {
+  0%, 100% { background-color: #1f2937; } /* bg-gray-800 */
+  50% { background-color: #ef4444; } /* bg-red-500 */
+}
+
+.flash {
+  animation: flash-red 1s ease-in-out;
+}

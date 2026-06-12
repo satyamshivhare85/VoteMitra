@@ -1,0 +1,35 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0E0E10;
+  background-image: radial-gradient(circle at top left, rgba(234, 88, 12, 0.1), transparent 30%),
+                    radial-gradient(circle at bottom right, rgba(22, 163, 74, 0.1), transparent 30%);
+}
+
+.scanner-line { 
+  position: absolute; 
+  width: 100%; 
+  height: 3px; 
+  background: #16A34A; 
+  animation: scan 2s linear infinite; 
+}
+
+@keyframes scan { 
+  0% { top: 0; } 
+  100% { top: 100%; } 
+}
+
+.glass-nav {
+  background: rgba(17, 24, 39, 0.3);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.text-animated {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.text-flip-out {
+  transform: rotateX(-90deg);
+  opacity: 0;
+}

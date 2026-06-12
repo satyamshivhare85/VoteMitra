@@ -1,0 +1,22 @@
+.hero-bg {
+  background-color: #0E0E10;
+  background-image: radial-gradient(circle at top left, rgba(67, 56, 202, 0.3) 0%, transparent 40%),
+                    radial-gradient(circle at bottom right, rgba(124, 58, 237, 0.3) 0%, transparent 40%);
+}
+
+/* slogan animation */
+.slogan-container {
+  perspective: 800px;
+}
+
+#flipping-slogan {
+  display: inline-block;
+  transform-origin: top center;
+  transition: transform 0.6s cubic-bezier(0.2, 1, 0.3, 1),
+              opacity 0.6s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.slogan-out {
+  transform: rotateX(-90deg);
+  opacity: 0;
+}
