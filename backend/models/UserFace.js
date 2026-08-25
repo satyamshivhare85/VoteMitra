@@ -8,6 +8,9 @@ const userFaceSchema = new mongoose.Schema(
       unique: true,
     },
 
+
+
+
     embeddings: {
       type: [[Number]],
       required: true,

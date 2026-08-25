@@ -284,35 +284,8 @@ function FaceRegistration() {
   };
 
 
-// const saveFaces = async (aadhar, faces) => {
-//   try {
-//     const res = await axios.post(
-//       "http://localhost:8000/api/register",
-//       { aadhar, faces }
-//     );
 
-//     console.log("Server response:", res.status, res.data);
-
-//     if (res.status === 201 || res.data.success) {
-//       setStatusText("✅ Registration successful!");
-//       speak("Thank you. Your face has been registered successfully.");
-//     } 
-//     else if (res.status === 409 || res.data.exists) {
-//       setStatusText("⚠️ Duplicate face detected. Registration stopped.");
-//       speak("Duplicate face detected. Registration stopped.");
-//     } 
-//     else {
-//       setStatusText(`❌ ${res.data?.error || "Error during registration"}`);
-//       speak("Error occurred during registration.");
-//     }
-
-//   } catch (err) {
-//     console.error("Save faces error:", err);
-
-//     setStatusText("❌ Failed to connect to the server.");
-//     speak("Failed to save to the database. Please check the server connection.");
-//   }
-// };
+//THIS REQUEST WILL GO TO BACKEND NOW AND MOVE FORWARD TO AUTO DOWNLOAD THREE MODELS---> TO PRETRAINED MODELS
 
 const saveFaces = async (aadhar, faces) => {
   try {

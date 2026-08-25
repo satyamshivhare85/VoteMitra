@@ -12,6 +12,7 @@ export const verifyVoter = async (req, res) => {
         message: "Face embedding required",
       });
     }
+    
 
     // GET ALL USERS
     const users = await UserFace.find();
